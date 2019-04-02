@@ -1,20 +1,20 @@
-%% loading an image
-real = imread('x.jpg');
+% loading an image
+real = imread('E:\14115402\DIP\x.jpg');
 real1=real;
-%%showing the image
+%showing the image
 figure,imshow(real),title('Original Image');
-%%showing in m*n*3 format
+%showing in m*n*3 format
 [m,n,shape]= size(real);
-%%slicing the matrices to get the individual planes
+%slicing the matrices to get the individual planes
 red=real(:,:,1);
 green=real(:,:,2);
 blue=real(:,:,3);
  
-%%creating a canvas :
+%creating a canvas :
 canvas=zeros(m,n);
 array=zeros(256,1);
  
-%%now looping to get the maximum from the planes
+%now looping to get the maximum from the planes
 for i=1:m
     for j=1:n
         for k=1:3
